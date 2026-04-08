@@ -47,7 +47,7 @@ local function calculateTerrainHeight(x, z)
 	local plainsNoise = (getNoiseValue(x, z, 0.0019, 4, 0.5, 2) + 1) * 0.5
 	local height = BASE_HEIGHT + plainsNoise * 18
 
-	-- still nto happy with how mountains turend out
+	-- still not happy with how mountains turend out
 	local mountainNoise = (getNoiseValue(x, z, 0.0042, 6, 0.5, 2) + 1) * 0.5
 	local sharpenedMountains = mountainNoise ^ 3
 	height = height + sharpenedMountains * (MAX_HEIGHT * 3) * continentMask
