@@ -9,7 +9,7 @@ local RENDER_DISTANCE = 3
 local BASE_HEIGHT = 10
 local MAX_HEIGHT = 150
 local WATER_LEVEL = 40
-local WORLD_SEED = 6767 -- hehehe
+local WORLD_SEED = 1234
 
 local loadedChunks = {}
 local playerConnections = {}
